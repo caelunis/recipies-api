@@ -8,6 +8,10 @@ const Navbar: React.FC = () => {
                 <Link to="/" className="text-xl font-bold">MealDB Recipe App</Link>
                 <div>
                     <Link to="/" className="mx-2 hover:underline">Home</Link>
+                    <Link to="/random" className="mx-2 hover:underline">Random Meal</Link>
+                    <Link to="/categories" className="mx-2 hover:underline">Categories</Link>
+                    <Link to="/areas" className="mx-2 hover:underline">Areas</Link>
+                    <Link to="/ingredients" className="mx-2 hover:underline">Ingredients</Link>
                     <Link to="/about" className="mx-2 hover:underline">About</Link>
                 </div>
             </div>

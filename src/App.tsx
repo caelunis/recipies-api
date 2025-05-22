@@ -4,8 +4,14 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import MealDetailPage from './pages/MealDetailPage';
+import RandomMealPage from './pages/RandomMealPage';
+import CategoriesPage from './pages/CategoriesPage';
+import CategoryMealsPage from './pages/CategoryMealsPage';
+import AreasPage from './pages/AreasPage';
+import AreaMealsPage from './pages/AreaMealsPage';
+import IngredientsPage from './pages/IngredientsPage';
+import IngredientMealsPage from './pages/IngredientMealsPage';
 import About from './pages/About';
-import './styles.css';
 
 const App: React.FC = () => {
     return (
@@ -16,6 +22,13 @@ const App: React.FC = () => {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/meal/:id" element={<MealDetailPage />} />
+                        <Route path="/random" element={<RandomMealPage />} />
+                        <Route path="/categories" element={<CategoriesPage />} />
+                        <Route path="/category/:category" element={<CategoryMealsPage />} />
+                        <Route path="/areas" element={<AreasPage />} />
+                        <Route path="/area/:area" element={<AreaMealsPage />} />
+                        <Route path="/ingredients" element={<IngredientsPage />} />
+                        <Route path="/ingredient/:ingredient" element={<IngredientMealsPage />} />
                         <Route path="/about" element={<About />} />
                     </Routes>
                 </main>
